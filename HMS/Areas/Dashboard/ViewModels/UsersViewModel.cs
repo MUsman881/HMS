@@ -30,4 +30,11 @@ namespace HMS.Areas.ViewModels
         public string City { get; set; }
         public string Address { get; set; }
     }
+
+    public class UserRolesModel
+    {
+        public IEnumerable<IdentityRole> UserRoles { get; set; }
+
+        public IEnumerable<IdentityRole> Roles { get; set; }
+    }
 }
