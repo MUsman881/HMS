@@ -1,7 +1,7 @@
 ﻿@model HMS.Areas.ViewModels.UsersListingModel
 
 @{
-    ViewBag.Title = "User";
+    ViewBag.Title = "Users";
 }
 
 <div class="row">
@@ -19,8 +19,8 @@
 
                 @if (Model.Roles != null && Model.Roles.Count() > 0)
                 {
-                    <select class="form-select" name="RoleID">
-                        <option value="0">
+                    <select class="form-select" name="roleID">
+                        <option value="">
                             Select Role
                         </option>
                         @foreach (var role in Model.Roles)
